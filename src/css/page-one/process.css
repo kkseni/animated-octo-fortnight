@@ -41,6 +41,18 @@
     flex-direction: row-reverse;
 }
 
+.process-list-item:nth-child(2) {
+    order: 4;
+}
+
+.process-list-item:nth-child(3) {
+    order: 2;
+}
+
+.process-list-item:nth-child(4) {
+    order: 3;
+}
+
 .process-item-descr {
     font-weight: 500;
     font-size: 16px;
@@ -69,6 +81,24 @@
 .process-btn:hover,
 .process-btn:focus {
     background-color: #336666;
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1200px) {
+
+    .process-list-item:nth-child(2) {
+        order: 2;
+    }
+
+    .process-list-item:nth-child(3) {
+        order: 3;
+    }
+
+    .process-list-item:nth-child(4) {
+        order: 4;
+    }
+
 }
 
 /* #endregion process*/

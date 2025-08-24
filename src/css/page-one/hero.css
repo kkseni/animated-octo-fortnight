@@ -6,11 +6,12 @@
 
 .hero .container {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   gap: 35px;
 }
 
-.hero-wrap {}
+
 
 .hero-title {
   font-weight: 700;
@@ -69,6 +70,32 @@
 .hero-btn-triangle {
   fill: #02897a;
   margin-right: 5px;
+}
+
+@media screen and (min-width:768px) {
+
+  .hero-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero-buttons-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero .container {
+    flex-direction: row;
+  }
+
+  .hero-wrap {
+    flex-direction: column;
+  }
+
+  .hero-buttons-list {
+    flex-direction: row;
+  }
 }
 
 /* #endregion hero*/

@@ -25,6 +25,7 @@
 
 .strategy-list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
 }
 
@@ -58,4 +59,10 @@
 
 .strategy-item-descr {}
 
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1200px) {
+  .strategy-list{flex-direction: row;}
+}
 /* #endregion strategy*/

@@ -5,6 +5,7 @@
 
 .collaborative-wrap {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 84px;
 }
@@ -60,5 +61,13 @@
     color: #22343d;
 }
 
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1200px) {
+    .collaborative-wrap {
+        flex-direction: row;
+
+    }
+}
 
 /* #endregion collaborative*/
