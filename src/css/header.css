@@ -23,70 +23,79 @@
   color: #173a56;
 }
 
-.navigation-list {
-  display: flex;
-  gap: 40px;
-}
-
-.navigation-list-item {}
-
-.navigation-list-link {
-  font-weight: 400;
-  font-size: 16px;
-  padding: 26px 0;
-  display: block;
-  /* line-height: 28px; */
-  line-height: 1.75;
-  color: #22343d;
-}
-
-.current {
-  font-weight: 600;
-}
-
+.navigation-list,
 .header-buttons-list {
-  display: flex;
-  gap: 21px;
+  display: none;
 }
 
-.header-btn-item {}
+@media screen and (min-width:768px) {
+  .navigation-list {
+    display: flex;
+    gap: 40px;
+  }
 
-.header-btn-sign-in {
-  border: 1px solid #bcd0e5;
-  border-radius: 4px;
-  width: 105px;
-  height: 42px;
-  background-color: #fff;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  color: #173a56;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .navigation-list-link {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 26px 0;
+    display: block;
+    /* line-height: 28px; */
+    line-height: 1.75;
+    color: #22343d;
+  }
+
+
+  .current {
+    font-weight: 600;
+  }
+
+  
+
+  .header-btn-item {}
+
+  .header-btn-sign-in {
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    width: 105px;
+    height: 42px;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #173a56;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-btn-sign-up {
+    background: #02897a;
+    border-radius: 4px;
+    width: 113px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-btn-sign-in:hover,
+  .header-btn-sign-in:focus {
+    background: #02897a;
+    color: #fff;
+    border: none;
+  }
+
+  .header-btn-sign-up:hover,
+  .header-btn-sign-up:focus {
+    color: #173a56;
+    background-color: #fff;
+    border: 1px solid #bcd0e5;
+  }
 }
 
-.header-btn-sign-up {
-  background: #02897a;
-  border-radius: 4px;
-  width: 113px;
-  height: 42px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #fff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width:1200px) {
+  .header-buttons-list {
+      display: flex;
+      gap: 21px;
+    }
 }
-
-.header-btn-sign-in:hover,
-.header-btn-sign-in:focus {
-  background: #02897a;
-  color: #fff;
-  border: none;
-}
-
-.header-btn-sign-up:hover,
-.header-btn-sign-up:focus {
-  color: #173a56;
-  background-color: #fff;
-  border: 1px solid #bcd0e5;
-}
-
 /* #endregion header*/
